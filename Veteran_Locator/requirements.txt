@@ -1,0 +1,48 @@
+# ==============================================
+# ShellShockHive — Advanced Locator
+# Verified Dependency Set (October 2025)
+# ==============================================
+# Purpose: Ensures full compatibility between Streamlit UI,
+# OSMnx graph generation, GeoPandas geometry ops, and PostGIS storage.
+# Tested under Python 3.11.x (recommended)
+# ==============================================
+
+# --- Core UI ---
+streamlit==1.38.0
+streamlit-folium==0.19.1
+
+# --- Mapping / Geospatial ---
+folium==0.17.1
+geopy==2.4.1
+osmnx==1.9.4
+networkx==3.3
+shapely==2.0.5
+geopandas==1.0.1
+
+# --- Database / Persistence ---
+psycopg2-binary==2.9.9
+
+# --- Async / API / Data Handling ---
+aiohttp==3.10.8
+requests==2.32.3
+pandas==2.2.3
+numpy==1.26.4
+
+# --- Environmental Intelligence ---
+pyowm==3.3.0       # OpenWeatherMap integration for live weather scoring
+astral==3.2        # Sunlight & daylight calculations for temporal weighting
+
+# --- Utility / Logging ---
+rich==13.7.1       # Advanced terminal and logging output
+python-dotenv==1.0.1
+typing-extensions==4.12.2
+
+# ==============================================
+# Optional (Developer Utilities)
+# Uncomment for debugging or performance profiling
+# ==============================================
+# pytest==8.3.3
+# tqdm==4.66.5
+# jupyterlab==4.2.5
+# memory-profiler==0.61.0
+# black==24.10.0
